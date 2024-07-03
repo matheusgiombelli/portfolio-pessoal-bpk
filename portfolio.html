@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link href="src/style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/header.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/portfolio.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <span>
+                    portfólio.
+                </span>
+                
+                <li onclick="mostrarLateral()"><a href="#" id="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+                <ul class="mobile-header">
+                    <li onclick="esconderLateral()"><svg id="close-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                    <li>
+                        <a href="index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a href="#about">SOBRE</a>
+                    </li>
+                    <li>
+                        <a href="#study">ESTUDOS</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">PORTFÓLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTATO</a>
+                    </li>
+                </ul>
+
+                <ul class="normal-header">
+                    <li>
+                        <a href="index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a href="#about">SOBRE</a>
+                    </li>
+                    <li>
+                        <a href="#study">ESTUDOS</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">PORTFÓLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            function mostrarLateral() {
+                const lateral = document.querySelector('.mobile-header')
+                lateral.style.display = 'flex'
+            }
+
+            function esconderLateral() {
+                const lateral = document.querySelector('.mobile-header')
+                lateral.style.display = 'none'
+            }
+        </script>
+    </header>
+    
+    <section class="portfolio" id="portfolio">
+        <h1>Portfólio</h1>
+        <div class="portfolio-section">
+            <div class="portfolio-item" onclick="window.open('https://github.com/matheusgiombelli/luar-velas-aromaticas', '_blank')">
+                <img src="src/img/luar-velas-aromaticas.png">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Site Luar Velas Arómaticas<br>
+                        Projeto desenvolvido em grupo.
+                    </div>
+                </div>
+                <h2>Site Luar Velas Arómaticas</h2>
+            </div>
+
+            <div class="portfolio-item" onclick="window.open('https://github.com/matheusgiombelli/crud', '_blank')">
+                <img src="src/img/crud-pizzaria.png">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        C.R.U.D Pizzaria<br>
+                        Projeto CRUD (Create, Read, Update and Delete) com o tema de pizzaria, desenvolvido em grupo.
+                    </div>
+                </div>
+                <h2>CRUD Pizzaria</h2>
+            </div>
+
+            <div class="portfolio-item" onclick="window.open('https://github.com/matheusgiombelli/calculadora-simples')">
+                <img src="src\img\calculadora.jpeg">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Calculadora simples<br>
+                        Feito com HTML, CSS, Javascript.
+                    </div>
+                </div>
+                <h2>Calculadora simples</h2>
+            </div>
+
+            <!-- Novos itens de portfólio -->
+            <div class="portfolio-item" onclick="window.open('https://github.com/seuusuario/projeto1', '_blank')">
+                <img src="path/to/your/image.jpg">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Projeto 1<br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <h2>Projeto 1</h2>
+            </div>
+
+            <div class="portfolio-item" onclick="window.open('https://github.com/seuusuario/projeto2', '_blank')">
+                <img src="path/to/your/image.jpg">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Projeto 2<br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <h2>Projeto 2</h2>
+            </div>
+
+            <div class="portfolio-item" onclick="window.open('https://github.com/seuusuario/projeto3', '_blank')">
+                <img src="path/to/your/image.jpg">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Projeto 3<br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <h2>Projeto 3</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

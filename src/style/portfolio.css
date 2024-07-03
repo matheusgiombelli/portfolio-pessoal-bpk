@@ -1,0 +1,73 @@
+.portfolio {
+    color: var(--4);
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.portfolio h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.portfolio-item h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.portfolio-item {
+    position: relative;
+    flex: 1 1 33%;
+    width: 100%;
+    max-width: 25rem;
+    height: 15rem;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: opacity 0.5s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.portfolio-item .portfolio-text {
+    background-color: transparent;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+@media screen and (max-width: 769px) {   
+    .portfolio-item {
+        flex: 1 1 100%; /* Make each item take full width on smaller screens */
+    }
+}

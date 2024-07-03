@@ -1,0 +1,60 @@
+.contact {
+    color: var(--4);
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.contact h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item img {
+    background-color: var(--2);
+    display: inline-flex;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 0.3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 0.2rem solid var(--2);
+    border-radius: 30%;
+    transition: 0.3s ease;
+}
+
+.contact-item img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1rem var(--2);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.contact-text {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}

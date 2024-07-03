@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link href="src/style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/header.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/section1.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/section2.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/section3.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/portfolio-section.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/contact.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <span>
+                    portfólio.
+                </span>
+                
+                <li onclick="mostrarLateral()"><a href="#" id="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+                <ul class="mobile-header">
+                    <li onclick="esconderLateral()"><svg id="close-btn" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+                    <li>
+                        <a href="index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a href="#about">SOBRE</a>
+                    </li>
+                    <li>
+                        <a href="#study">ESTUDOS</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">PORTFÓLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTATO</a>
+                    </li>
+                </ul>
+
+                <ul class="normal-header">
+                    <li>
+                        <a href="index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a href="#about">SOBRE</a>
+                    </li>
+                    <li>
+                        <a href="#study">ESTUDOS</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">PORTFÓLIO</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <script>
+            function mostrarLateral() {
+                const lateral = document.querySelector('.mobile-header')
+                lateral.style.display = 'flex'
+            }
+
+            function esconderLateral() {
+                const lateral = document.querySelector('.mobile-header')
+                lateral.style.display = 'none'
+            }
+        </script>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Matheus Giombelli, Desenvolvedor</h1>
+            <h3>Estudante no <span>Biopark Educação</span>.</h3>
+            <p>Bem-vindo ao meu <span>portfólio</span>! Eu sou Matheus Giombelli, um entusiasta da tecnologia e estudante de <span>Análise e Desenvolvimento de Sistemas</span> no Biopark Educação. Aqui, você encontrará um pouco sobre minha jornada, projetos e aspirações no mundo da programação.</p>
+        
+            <div class="media-social">
+                <a href="https://instagram.com/matheus.giombelli"><img src="src/icon/instagram-icon.svg"></a>
+                <a href="https://github.com/matheusgiombelli"><img src="src/icon/github-icon.svg"></a>
+                <a href="https://www.linkedin.com/in/matheus-giombelli-09358a302/"><img src="src/icon/linkedin-icon.svg"></a>
+            </div>
+        </div>
+        
+        <div class="home-image">
+            <img src="src/img/1708221629906.jpg"/>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h1>Sobre</h1>
+            <p>Desde cedo, fui fascinado pelo poder craiador e transformador da tecnologia. Essa paixão me levou a estudar Análise e Desenvolvimento de Sistemas no Biopark Educação, onde estou aprimorando minhas habilidades em programação e desenvolvimento de software. Espero muito crescer e contribuir para o avanço tecnológico, meus objetivos incluem dominar as linguagens de programação mais relevantes do mercado, compreender os princípios do desenvolvimento de software e participar de projetos que me permitam aplicar na prática o que estou aprendendo.</p>
+        </div>
+    </section>
+
+    <section class="study" id="study">
+        <h1>Estudos</h1>
+        <p>Atualmente, estou cursando o 1° semestre. Durante o curso, tenho mergulhado em diversas áreas da tecnologia, desde programação em diferentes linguagens até áreas ao qual eu nunca havia explorado. Cada aula é uma oportunidade para expandir meu conhecimento e aplicar teorias na prática através da metodologia ativa. Ansioso para enfrentar novos desafios e aprender ainda mais.</p>
+        <h3>Conhecimentos atuais</h3>
+
+        <div class="study-container">
+            <div class="card">
+                <img src="src/icon/html-icon.svg">
+                <h3>HTML & CSS Básico</h3>
+                <p>Adquiri conhecimento de HTML & CSS Básico nas aulas de Modelagem de Sites Básicos</p>
+            </div>
+            <div class="card">
+                <img src="src/icon/python-icon.svg">
+                <h3>Python Básico</h3>
+                <p>Essa foi a minha primeira linguagem que eu conheci e foi um dos motivos de eu gostar e escolher a área como minha futura profissão, foi minha porta de entrada devido a fácil compreensão da linguagem</p>
+            </div>
+            <div class="card">
+                <img src="src/icon/C-icon.svg">
+                <h3>C Básico</h3>
+                <p>Aprendi em minhas de Desenvolvimento Desktop a programar em Linguagem C Básico.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h1>Portfólio</h1>
+        <div class="portfolio-section">
+            <div class="portfolio-item" onclick="window.open('https://github.com/matheusgiombelli/luar-velas-aromaticas')">
+                <img src="src/img/luar-velas-aromaticas.png">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Site Luar Velas Arómaticas<br>
+                        Projeto desenvolvido em grupo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" onclick="window.open('https://github.com/matheusgiombelli/crud',)">
+                <img src="src/img/crud-pizzaria.png">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        C.R.U.D Pizzaria<br>
+                        Projeto CRUD(Create, Read, Update and Delete) com o tema de pizzaria, desenvolvido em grupo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item" onclick="window.open('https://github.com/matheusgiombelli/calculadora-simples')">
+                <img src="src\img\calculadora.jpeg">
+                <div class="overlay">
+                    <div class="portfolio-text">
+                        Calculadora simples<br>
+                        Feito com HTML, CSS, Javascript.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Entre em Contato!</h1>
+        <div class="contact-section">
+            <div class="contact-item">
+                <a href="https://instagram.com/matheus.giombelli">
+                    <img src="src/icon/instagram-icon.svg">
+                    <div class="contact-text">Instagram</div>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/matheus-giombelli-09358a302/">
+                    <img src="src/icon/linkedin-icon.svg">
+                    <div class="contact-text">LinkedIn</div>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/matheusgiombelli">
+                    <img src="src/icon/github-icon.svg">
+                    <div class="contact-text">GitHub</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
